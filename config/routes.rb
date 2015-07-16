@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   get '/places' => 'places#index'
   get '/places/new' => 'places#new'
-  get '/places/submit_new' => 'places#submitted'
+  # get '/places/submit_new' => 'places#submitted'
+  post '/places' => 'places#submitted'
   get '/places/:id' => 'places#show'
   get '/places/:id/delete' => 'places#delete'
   get '/places/:id/edit' => 'places#edit'
