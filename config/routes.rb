@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   get '/places/:id' => 'places#show'
   get '/places/:id/delete' => 'places#delete'
   get '/places/:id/edit' => 'places#edit'
-  get '/places/:id/submit_edit' => 'places#update'
+  # get '/places/:id/submit_edit' => 'places#update'
+  patch '/places/:id' => 'places#update'
 
   get '/reviews/:place_id/submit_new'  => 'reviews#create'
 
