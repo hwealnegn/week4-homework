@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   # get '/places/:id/submit_edit' => 'places#update'
   patch '/places/:id' => 'places#update'
 
-  get '/reviews/:place_id/submit_new'  => 'reviews#create'
+  # get '/reviews/:place_id/submit_new'  => 'reviews#create'
+  post '/reviews/:place_id' => 'reviews#create'
 
 end
