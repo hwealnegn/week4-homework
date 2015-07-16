@@ -34,7 +34,7 @@ class PlacesController < ApplicationController
     redirect_to "/places/#{@place.id}"
   end
 
-  def delete
+  def destroy
     Place.delete(params[:id])
     redirect_to root_path
   end
